@@ -1,0 +1,203 @@
+/*********************
+COLORS
+*********************/
+$black: #000;
+$white: #fff;
+$green:	#0f0;
+
+/*********************
+GENERAL STYLES
+*********************/
+* {box-sizing: border-box;}
+body {
+	font-family: 'camcorderregular_reg', sans-serif;
+	font-size: 14px;
+	line-height: 1.5;
+	color: #fff;
+}
+.video {
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	width: 100%;
+	height: 100%;
+	z-index: 1;
+}
+
+object, #player {position: absolute; top: 0; bottom: 0; width: 100%; height:100%; z-index: 1;
+	body {margin: 0;}
+}
+
+header#banner {display: none; }
+main {
+	background: url(/assets/test-pattern.png) no-repeat;
+	  -webkit-background-size: 100% auto;
+	  -moz-background-size: 100% auto;
+	  -o-background-size: 100% auto;
+	  background-size: 100% auto;
+	float: right;
+	display: block;
+	position: absolute;
+	left: 200px;
+	right: 0;
+	top: 0;
+	bottom: 0;
+}
+
+header {
+	padding: 35px 0 50px 0;
+	width: 200px;
+	height: 100%;
+	float: left;
+	position: fixed;
+	top: 0;
+	bottom: 0;
+	background: #000;
+	z-index: 3;
+	text-align: center;
+	overflow-y: scroll;
+}
+
+.sidebar__open {
+	position: absolute;
+	top: 15px;
+	right: 5px;
+}
+.sidebar__open {
+	position: absolute;
+	top: 15px;
+	left: 5px;
+	z-index: 2;
+	color: rgba(255,255,255,.25);
+	&:hover {
+		color: $green;
+	}
+}
+
+.tags {
+	padding: 20px 0;
+}
+a.tag, a.tag:visited {
+	display: inline-block;
+	background: $green;
+	color: $black;
+	padding: 4px;
+	border-radius: 3px;
+	margin: 0 6px 6px 0;
+	font-size: 11px;
+	white-space: nowrap;
+	&:hover {color: $white;}
+}
+p {margin: 0; letter-spacing: 2px;}
+img {clear: both;}
+
+#share {
+	font-size: 10px;
+	a, a:visited {
+		color: $white;
+		&:hover {
+			text-decoration: underline;
+		}
+	}
+}
+#social {
+	line-height: 22px;
+}
+.like, .follow {
+	display: inline;
+	height: 22px !important;
+	width: 60px;
+}
+.like {width: 50px;}
+.colophon {font-size: 13px;}
+/*********************
+LAYOUT & GRID STYLES
+*********************/
+
+.wrap {
+	width: 90%;
+	margin: 0 auto;
+}
+
+/*********************
+HEADER SYTLES
+*********************/
+header {}
+
+/*********************
+SIDEBARS & ASIDES
+*********************/
+aside {}
+
+/*********************
+FOOTER STYLES
+*********************/
+
+footer {
+	clear: both;
+}
+
+/*********************
+LINK STYLES
+*********************/
+
+a, a:visited {
+	cursor: pointer;
+	cursor: hand;
+	//.link-style;
+}
+
+/******************************************************************
+H1, H2, H3, H4, H5 STYLES
+******************************************************************/
+
+h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5 {
+	text-rendering: optimizelegibility;
+	font-weight: 500;
+}
+
+h1, {
+	font-size: 2.5em;
+	font-family: 'camcorderregular_ol1', Georgia, serif;
+	line-height: 1.333em;
+	position: absolute;
+	bottom: 20px;
+	right: 20px;
+	z-index: 9999999999;
+	a, a:visited {
+	  font-family: 'camcorderregular_ol1';
+  	text-shadow: 0 0 1px rgba(0,0,0,1);
+	}
+}
+
+h2 {
+	font-size: 1.5em;
+	line-height: 1.2em;
+	margin: 0 0 5px 0;
+	letter-spacing: 2px;
+	background: $green;
+	padding: 5px;
+	a, a:visited {
+		color: $black;
+		&:hover {
+			color: $black;
+		}
+	}
+}
+
+h3, .h3 {
+	font-size: 1.125em;
+}
+
+h4, .h4 {
+	font-size: 1.1em;
+	font-weight: 700;
+}
+
+h5, .h5 {
+	font-size: 0.846em;
+	line-height: 2.09em;
+	text-transform: uppercase;
+	letter-spacing: 2px;
+}
+
