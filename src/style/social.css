@@ -1,0 +1,6 @@
+.social {
+  line-height: 22px; }
+  .social__like, .social__follow {
+    display: inline;
+    height: 22px !important;
+    width: 60px; }

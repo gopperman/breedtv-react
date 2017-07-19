@@ -1,3 +1,4 @@
+@import 'style/social.scss';
 /*********************
 COLORS
 *********************/
@@ -100,14 +101,7 @@ img {clear: both;}
 		}
 	}
 }
-#social {
-	line-height: 22px;
-}
-.like, .follow {
-	display: inline;
-	height: 22px !important;
-	width: 60px;
-}
+
 .like {width: 50px;}
 .colophon {font-size: 13px;}
 /*********************
