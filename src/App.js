@@ -67,7 +67,7 @@ class App extends Component {
       <div className="BreedTV sidebar__visible">
         <h1>BreedTV <blink><a title="SKIP">&gt;&gt;</a></blink></h1>
         <a onClick={this.openSidebar} className="sidebar__open">[info]</a>
-        <Sidebar />
+        <Sidebar video={nextVideo}/>
         <main>
           {this.videoOrNull(nextVideo)}
         </main>

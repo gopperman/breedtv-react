@@ -172,7 +172,7 @@ sidebar {
   .sidebar__open:hover {
     color: #0f0; }
 
-.tags {
+.video__tags {
   padding: 20px 0; }
 
 a.tag, a.tag:visited {
