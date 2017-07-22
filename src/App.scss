@@ -25,9 +25,8 @@ object, #player {position: absolute; top: 0; bottom: 0; width: 100%; height:100%
 	body {margin: 0;}
 }
 
-header#banner {display: none; }
 main {
-	background: url(/assets/test-pattern.png) no-repeat;
+	background: url(./img/test-pattern.png) no-repeat;
 	  -webkit-background-size: 100% auto;
 	  -moz-background-size: 100% auto;
 	  -o-background-size: 100% auto;
@@ -41,7 +40,7 @@ main {
 	bottom: 0;
 }
 
-header {
+sidebar {
 	padding: 35px 0 50px 0;
 	width: 200px;
 	height: 100%;
@@ -55,11 +54,28 @@ header {
 	overflow-y: scroll;
 }
 
-.sidebar__open {
+.sidebar__visible sidebar {
+	display: block;
+}
+
+.sidebar__hidden sidebar {
+	display: none;
+}
+
+.sidebar__visible main {
+	left: 200px;
+}
+
+.sidebar__hidden main {
+	left: 0;
+}
+
+.sidebar__close {
 	position: absolute;
 	top: 15px;
 	right: 5px;
 }
+
 .sidebar__open {
 	position: absolute;
 	top: 15px;
@@ -134,7 +150,12 @@ LINK STYLES
 a, a:visited {
 	cursor: pointer;
 	cursor: hand;
-	//.link-style;
+	color: lighten($green, 10%);
+	text-decoration: none;
+	&:hover, &:focus {
+		color: $green;
+		text-decoration: none;
+	}
 }
 
 /******************************************************************

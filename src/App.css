@@ -119,11 +119,8 @@ object, #player {
   object body, #player body {
     margin: 0; }
 
-header#banner {
-  display: none; }
-
 main {
-  background: url(/assets/test-pattern.png) no-repeat;
+  background: url(./img/test-pattern.png) no-repeat;
   -webkit-background-size: 100% auto;
   -moz-background-size: 100% auto;
   -o-background-size: 100% auto;
@@ -136,7 +133,7 @@ main {
   top: 0;
   bottom: 0; }
 
-header {
+sidebar {
   padding: 35px 0 50px 0;
   width: 200px;
   height: 100%;
@@ -149,7 +146,19 @@ header {
   text-align: center;
   overflow-y: scroll; }
 
-.sidebar__open {
+.sidebar__visible sidebar {
+  display: block; }
+
+.sidebar__hidden sidebar {
+  display: none; }
+
+.sidebar__visible main {
+  left: 200px; }
+
+.sidebar__hidden main {
+  left: 0; }
+
+.sidebar__close {
   position: absolute;
   top: 15px;
   right: 5px; }
@@ -222,7 +231,12 @@ LINK STYLES
 *********************/
 a, a:visited {
   cursor: pointer;
-  cursor: hand; }
+  cursor: hand;
+  color: #33ff33;
+  text-decoration: none; }
+  a:hover, a:focus, a:visited:hover, a:visited:focus {
+    color: #0f0;
+    text-decoration: none; }
 
 /******************************************************************
 H1, H2, H3, H4, H5 STYLES
